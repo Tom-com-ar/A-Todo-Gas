@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Hacer que el scroll sea suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos del header */
+header {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color:transparent;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Tamaño del logo en el header */
+.logo {
+    position: absolute;
+    left: 61%;
+    transform: translateX(-50%); /* Centra el logo exactamente en el medio del header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Ajusta la altura si es necesario */
+}
+
+.logo img {
+    max-width: 15%; /* Mantiene el logo responsive */
+}
+/* Estilos para el contenedor del video */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Altura del contenedor */
+    overflow: hidden;
+}
+
+/* Estilo del video */
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el video para cubrir el contenedor */
+}
+
+/* Estilos para el fondo negro con transparencia */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.293); /* Fondo negro con 60% de transparencia */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* Color del texto */
+    z-index: 1; /* Asegura que esté sobre el video */
+}
+
+/* Estilos para el texto en el overlay */
+.overlay h1 {
+    font-size: 50px;
+}
+
+
+.btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    background: #040f167c;
+    color: #f5f5f5;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 0 20px 0px #2e2e2e3a;
+  }
+  
+  .btn .icon {
+    position: absolute;
+    height: 40px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+  }
+  
+  .btn .text {
+    transform: translateX(55px);
+  }
+  
+  .btn:hover .icon {
+    width: 175px;
+  }
+  
+  .btn:hover .text {
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .btn:active .icon {
+    transform: scale(0.85);
+  }
+
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ff0000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content .submenu {
+    position: relative;
+}
+
+.dropdown-content .submenu-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.516);
+    z-index: 1;
+}
+
+.dropdown-content .submenu:hover .submenu-content {
+    display: block;
+}   
+
+.spec-container {
+    margin-top: 400px;
+    background-color: rgba(89, 89, 89, 0.682);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 250px;
+}
+
+.spec-item {
+    text-align: center;
+    color: rgb(255, 225, 0);
+}
+
+.spec-item h2 {
+    margin-top: 50px;
+    font-size: 46px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.spec-item p {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}

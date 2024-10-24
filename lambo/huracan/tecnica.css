@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Hacer que el scroll sea suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos del header */
+header {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Tamaño del logo en el header */
+.logo img {
+    height: 60px; /* Ajusta la altura del logo */
+}
+
+/* Estilos de la navegación */
+nav ul {
+    list-style: none;
+    margin-left: -640%;
+    padding-left: 120%;
+    display: flex;
+}
+
+/* Espacio entre los enlaces de navegación */
+nav ul li {
+    position: relative;
+    margin-left: 30px;
+}
+
+/* Estilos para los enlaces */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold; /* Texto en negrita */
+    transition: color 0.3s, border-bottom 0.3s; /* Transición para color y borde */
+    border-bottom: 2px solid transparent; /* Borde inferior invisible */
+    padding-bottom: 5px; /* Espacio debajo del texto */
+}
+
+/* Efecto hover en los enlaces */
+nav ul li a:hover {
+    color: #f1c40f; /* Color dorado en hover */
+    border-bottom: 2px solid #f1c40f; /* Borde dorado en hover */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-menu {
+    display: none; /* Ocultar por defecto */
+    position: absolute;
+    top: 100%; /* Mostrar debajo del elemento padre */
+    left: 0;
+    background-color: #333; /* Fondo oscuro */
+    border: 1px solid #666; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+    padding: 10px 0;
+    list-style: none;
+    margin: 0;
+    z-index: 1000;
+}
+
+/* Estilos para los ítems del menú desplegable */
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
+}
+
+/* Efecto hover en el menú desplegable */
+.dropdown-menu a:hover {
+    background-color: #f1c40f; /* Fondo dorado en hover */
+    color: #000; /* Texto negro en hover */
+}
+
+/* Mostrar el menú desplegable al pasar el mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Estilos para el submenú */
+.dropdown-submenu {
+    display: none; /* Ocultar por defecto */
+    position: absolute;
+    top: 0;
+    left: 100%; /* Mostrar a la derecha del elemento padre */
+    background-color: #333; /* Fondo oscuro */
+    border: 1px solid #666; /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+    padding: 10px 0;
+    list-style: none;
+    margin: 0;
+    z-index: 1000;
+}
+
+/* Estilo para ítems del submenú */
+.dropdown-submenu li {
+    width: 200px; /* Ancho del submenú */
+}
+
+/* Mostrar el submenú al pasar el mouse */
+.dropdown-menu li:hover .dropdown-submenu {
+    display: block;
+}
+
+/* Estilos para la sección de fondo */
+.fondo_inicio {
+    background-color: black;
+    padding-top: 0px; /* Ajusta según la altura del header */
+}
+
+/* Estilos para la sección de modelos */
+.modelos {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    align-items: stretch;
+}
+
+/* Estilo para el modelo Urus */
+.lambo_huracan_big {
+    background-image: url(../../complementos/huracan/huracan_tecnica.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.nombre{
+    position: absolute; /* Para posicionar el título encima */
+    margin-top: -38%;
+    margin-left: 5%;
+    font-size: 100px;
+    color: white;
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+    width: 30%;
+
+}
+
+.descrip{
+    position: absolute; /* Para posicionar el título encima */
+    margin-top: -25%;
+    text-align: left;
+    margin-left: 5%;
+    font-size: 30px;
+    text-decoration: underline;
+    color: white;
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+    width: 30%;
+}
+
+.descrip_p1{
+    position: absolute; /* Para posicionar el título encima */
+    margin-top: -22%;
+    text-align: left;
+    margin-left: 5%;
+    font-size: 25px;
+    color: white;
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+    width: 30%;
+}
+
+.descrip_p2{
+    position: absolute; /* Para posicionar el título encima */
+    margin-top: -20%;
+    text-align: left;
+    margin-left: 5%;
+    font-size: 25px;
+    color: white;
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+    width: 25%;
+}
+
+.descrip_p3{
+    position: absolute; /* Para posicionar el título encima */
+    margin-top: -16%;
+    text-align: left;
+    margin-left: 5%;
+    font-size: 25px;
+    color: white;
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+    width: 30%;
+}
+
+
+.descrip_p4{
+    position: absolute; /* Para posicionar el título encima */
+    margin-top: -14%;
+    text-align: left;
+    margin-left: 5%;
+    font-size: 25px;
+    color: white;
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+    width: 30%;
+}
+
+.descrip_p5{
+    position: absolute; /* Para posicionar el título encima */
+    margin-top: -12%;
+    text-align: left;
+    margin-left: 5%;
+    font-size: 25px;
+    color: white;
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+    width: 30%;
+}
+
+/* Estilo para el contenedor de la imagen */
+.image-container {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente según la imagen */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+/* Estilo de la imagen */
+.image-container img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio en línea por defecto de las imágenes */
+}
+
+/* Fondo negro con transparencia */
+.image-container::after {
+    content: '';
+    position: absolute;
+    top: 0; /* Ajustado para cubrir la parte superior del contenedor */
+    left: 0;
+    width: 30%; /* Ajusta este porcentaje según la anchura de la zona que quieras cubrir */
+    height: 100%; /* Cubre toda la altura del contenedor */
+    background-color: rgba(0, 0, 0, 0.705); /* Color negro con transparencia del 70% */
+    pointer-events: none; /* Permite la interacción con la imagen */
+}

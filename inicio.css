@@ -1,0 +1,202 @@
+/* Estilos generales para el body */
+body {
+    margin: 0;
+    font-family: Rubik One;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+/* Fondo negro difuminado para secciones específicas */
+.negro_difuminado {
+    background-color: rgba(0, 0, 0, 0.65); /* Negro con 65% de opacidad */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+/* Fondo de inicio con imagen */
+.fondo_inicio {
+    background-image: url(complementos/logos_y_inicio/fondo_inicio.jpg);
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-size: cover; /* Ajusta la imagen para cubrir el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Estilos para el botón abajo */
+.boton_abajo {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    z-index: 10000; /* Asegura que esté sobre otros elementos */
+}
+
+/* Estilos básicos para los botones */
+.boton {
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    color: #fff; /* Color del texto */
+    border-style: solid; /* Estilo de borde sólido */
+    background-color: transparent; /* Fondo transparente */
+    border-color: #000; /* Color del borde */
+    width: 140px; /* Ancho del botón */
+    height: 50px; /* Alto del botón */
+    transition: 0.2s ease; /* Transición suave para cambios */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    border-width: 2px; /* Grosor del borde */
+    font-weight: 500; /* Grosor del texto */
+    font-size: 18px; /* Tamaño del texto */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    z-index: 10000; /* Asegura que esté sobre otros elementos */
+}
+
+/* Efecto hover en el botón */
+.boton:hover {
+    color: #fff; /* Color del texto en hover */
+    background-color: #000; /* Fondo negro en hover */
+    border-color: #fff; /* Color del borde en hover */
+    text-shadow: 0 0 50px #fff, 0 0 20px #fff, 0 0 15px #fff; /* Sombra del texto */
+    box-shadow: 0 0 50px #000, 0 0 30px #000, 0 0 60px #000, 0 0 120px #000; /* Sombra del botón */
+    font-size: 20px; /* Aumenta el tamaño del texto en hover */
+    width: 150px; /* Ancho del botón en hover */
+    height: 60px; /* Alto del botón en hover */
+    letter-spacing: 1px; /* Espaciado entre letras en hover */
+}
+
+/* Efecto al presionar el botón */
+.boton:active {
+    width: 145px; /* Ancho del botón al presionar */
+    height: 48px; /* Alto del botón al presionar */
+    letter-spacing: 0px; /* Espaciado entre letras al presionar */
+}
+
+/* Estilos para el contenedor de autos */
+.autos {
+    display: flex; /* Usa flexbox para el diseño */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin padding */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: stretch; /* Estira los elementos para llenar el contenedor */
+}
+
+/* Estilos para el logo de Lamborghini */
+.logo_lambo {
+    width: 400px; /* Tamaño fijo para el logo */
+    height: 400px; /* Tamaño fijo para el logo */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
+    transition: transform 0.3s; /* Transición suave para el efecto hover */
+    position: absolute; /* Posición absoluta */
+    top: 28%; /* Ubicación vertical */
+    left: 20%; /* Ubicación horizontal */
+}
+
+/* Efecto hover en el logo de Lamborghini */
+.logo_lambo:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del logo */
+}
+
+/* Estilos para el logo de Ferrari */
+.logo_ferra {
+    width: 500px; /* Tamaño fijo para el logo */
+    height: 300px; /* Tamaño fijo para el logo */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
+    transition: transform 0.3s; /* Transición suave para el efecto hover */
+    position: absolute; /* Posición absoluta */
+    top: 35%; /* Ubicación vertical */
+    left: 15%; /* Ubicación horizontal */
+}
+
+/* Efecto hover en el logo de Ferrari */
+.logo_ferra:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del logo */
+}
+
+/* Estilos para el logo de Porsche */
+.logo_pors {
+    width: 300px; /* Tamaño fijo para el logo */
+    height: 300px; /* Tamaño fijo para el logo */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
+    transition: transform 0.3s; /* Transición suave para el efecto hover */
+    position: absolute; /* Posición absoluta */
+    top: 36%; /* Ubicación vertical */
+    left: 30%; /* Ubicación horizontal */
+}
+
+/* Efecto hover en el logo de Porsche */
+.logo_pors:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del logo */
+}
+
+/* Estilos generales para las secciones de autos */
+.lamborghini, .ferrari, .porsche {
+    flex: 1; /* Flexibilidad de los elementos */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    position: relative; /* Posición relativa para contenido interno */
+    display: flex; /* Usa flexbox para el diseño */
+    flex-direction: column; /* Dispone los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+}
+
+/* Estilos para los bloques de Lamborghini */
+.lambo_amarillo, .lambo_negro {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 50%; /* Ocupa la mitad de la altura del contenedor */
+}
+
+/* Estilo para el fondo amarillo de Lamborghini */
+.lambo_amarillo {
+    background-color: rgba(216, 160, 22, 0.3); /* Amarillo con 30% de opacidad */
+}
+
+/* Estilo para el fondo negro de Lamborghini */
+.lambo_negro {
+    background-color: rgba(0, 0, 0, 0.3); /* Negro con 30% de opacidad */
+}
+
+/* Estilos para los bloques de Ferrari */
+.ferra_amarillo, .ferra_negro, .ferra_verde, .ferra_blanco, .ferra_rojo {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 20%; /* Ocupa el 20% de la altura del contenedor */
+}
+
+/* Estilo para el fondo amarillo de Ferrari */
+.ferra_amarillo {
+    background-color: rgba(255, 242, 0, 0.3); /* Amarillo con 30% de opacidad */
+}
+
+/* Estilo para el fondo negro de Ferrari */
+.ferra_negro {
+    background-color: rgba(0, 0, 0, 0.3); /* Negro con 30% de opacidad */
+}
+
+/* Estilo para el fondo verde de Ferrari */
+.ferra_verde {
+    background-color: rgba(0, 140, 69, 0.3); /* Verde con 30% de opacidad */
+}
+
+/* Estilo para el fondo blanco de Ferrari */
+.ferra_blanco {
+    background-color: rgba(255, 255, 255, 0.3); /* Blanco con 30% de opacidad */
+}
+
+/* Estilo para el fondo rojo de Ferrari */
+.ferra_rojo {
+    background-color: rgba(205, 33, 42, 0.3); /* Rojo con 30% de opacidad */
+}
+
+/* Estilos para los bloques de Porsche */
+.pors_dorado, .pors_negro, .pors_rojo {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 33.3%; /* Ocupa el 33.3% de la altura del contenedor */
+}
+
+/* Estilo para el fondo dorado de Porsche */
+.pors_dorado {
+    background-color: rgba(235, 214, 152, 0.3); /* Dorado con 30% de opacidad */
+}
+
+/* Estilo para el fondo negro de Porsche */
+.pors_negro {
+    background-color: rgba(0, 0, 0, 0.3);
+ } /* Negro

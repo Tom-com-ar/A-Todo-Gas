@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Hacer que el scroll sea suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos del header */
+header {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Tamaño del logo en el header */
+.logo img {
+    height: 60px; /* Ajusta la altura del logo */
+}
+
+/* Estilos de la navegación */
+nav ul {
+    list-style: none;
+    margin-left: -640%;
+    padding-left: 120%;
+    display: flex;
+}
+
+/* Espacio entre los enlaces de navegación */
+nav ul li {
+    position: relative;
+    margin-left: 30px;
+}
+
+/* Estilos para los enlaces */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold; /* Texto en negrita */
+    transition: color 0.3s, border-bottom 0.3s; /* Transición para color y borde */
+    border-bottom: 2px solid transparent; /* Borde inferior invisible */
+    padding-bottom: 5px; /* Espacio debajo del texto */
+}
+
+/* Efecto hover en los enlaces */
+nav ul li a:hover {
+    color: #f1c40f; /* Color dorado en hover */
+    border-bottom: 2px solid #f1c40f; /* Borde dorado en hover */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-menu {
+    display: none; /* Ocultar por defecto */
+    position: absolute;
+    top: 100%; /* Mostrar debajo del elemento padre */
+    left: 0;
+    background-color: #333; /* Fondo oscuro */
+    border: 1px solid #666; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+    padding: 10px 0;
+    list-style: none;
+    margin: 0;
+    z-index: 1000;
+}
+
+/* Estilos para los ítems del menú desplegable */
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
+}
+
+/* Efecto hover en el menú desplegable */
+.dropdown-menu a:hover {
+    background-color: #f1c40f; /* Fondo dorado en hover */
+    color: #000; /* Texto negro en hover */
+}
+
+/* Mostrar el menú desplegable al pasar el mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Estilos para el submenú */
+.dropdown-submenu {
+    display: none; /* Ocultar por defecto */
+    position: absolute;
+    top: 0;
+    left: 100%; /* Mostrar a la derecha del elemento padre */
+    background-color: #333; /* Fondo oscuro */
+    border: 1px solid #666; /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra */
+    padding: 10px 0;
+    list-style: none;
+    margin: 0;
+    z-index: 1000;
+}
+
+/* Estilo para ítems del submenú */
+.dropdown-submenu li {
+    width: 200px; /* Ancho del submenú */
+}
+
+/* Mostrar el submenú al pasar el mouse */
+.dropdown-menu li:hover .dropdown-submenu {
+    display: block;
+}
+
+.section-competitivo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    width: 50%;
+    padding-right: 20px;
+    margin-left:30px;
+}
+
+.text-costado{
+    width: 50%;
+    padding-right: 20px;
+    margin-left:30px;
+    text-align: right;
+}
+
+.logo{
+    width: 30%;
+    margin-right: 20px;
+}
+
+.text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.text-costado h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.text-costado p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.image{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image::before {
+    content: '';
+    align-items: right;
+    position: absolute;
+    top: 50px;
+    left: 200%;
+    width: 100%;
+    height: 200%;
+    background-color: #fff;
+    transform: rotate(5deg);
+    z-index: 1;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image2{
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image3{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-collage {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 columnas para más flexibilidad */
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.collage-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/* Ajustar el tamaño de cada imagen del collage */
+.collage-item:nth-child(1) {
+    grid-column: span 5; /* La primera imagen ocupa 7 columnas */
+    grid-row: span 5;     /* Ocupa 2 filas */
+}
+
+.collage-item:nth-child(2) {
+    grid-column: span 6;  /* Segunda imagen ocupa 5 columnas */
+    grid-row: span 5;     /* Ocupa 1 fila */
+}
+
+.collage-item:nth-child(3) {
+    border-radius: 40px;
+    grid-column: span 10;  /* Tercera imagen ocupa 4 columnas */
+    grid-row: span 2;     /* Ocupa 1 fila */
+}
+
+.text-gt h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000;
+    text-align: right;
+}
+
+.text-gt p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    text-align: right;
+
+}
+
